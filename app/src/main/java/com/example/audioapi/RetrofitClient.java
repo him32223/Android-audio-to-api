@@ -12,7 +12,7 @@ public class RetrofitClient {
     public static Retrofit getRetrofitInstance(){
         if(retrofit == null){
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://postman-echo.com/post")
+                    .baseUrl("https://reqres.in/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 

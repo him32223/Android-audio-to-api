@@ -5,11 +5,15 @@ import kotlin.text.UStringsKt;
 public class User {
 
     private String name;
-    private String message;
+    private String job;
+    private String id;
+    private String createdAt;
 
-    public User(String name, String message) {
+    public User(String name, String job, String id, String createdAt) {
         this.name = name;
-        this.message = message;
+        this.job = job;
+        this.id = id;
+        this.createdAt = createdAt;
     }
 
     public String getName() {
@@ -20,11 +24,28 @@ public class User {
         this.name = name;
     }
 
-    public String getMessage() {
-        return message;
+    public String getJob() {
+        return job;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setJob(String job) {
+        this.job = job;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
     }
 }
+
